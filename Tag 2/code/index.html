@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="/calculator.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background: #303030;
+        }
+
+        .container {
+            max-width: 216px;
+        }
+
+        .col {
+            padding: 8px;
+        }
+
+        .btn {
+            width: 38px;
+        }
+
+        input {
+            margin: 8px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-top: 16px;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mathe mit Tobi</h1>
+        <div class="row">
+            <input id="textbox" readonly type="text" class="form-control">
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="clickNumber(7)" class="btn btn-light">7</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(8)" class="btn btn-light">8</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(9)" class="btn btn-light">9</button>
+            </div>
+            <div class="col">
+                <button onclick="clickOperator('/')" class="btn btn-light">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="clickNumber(4)" class="btn btn-light">4</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(5)" class="btn btn-light">5</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(6)" class="btn btn-light">6</button>
+            </div>
+            <div class="col">
+                <button onclick="clickOperator('*')" class="btn btn-light">*</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button onclick="clickNumber(1)" class="btn btn-light">1</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(2)" class="btn btn-light">2</button>
+            </div>
+            <div class="col">
+                <button onclick="clickNumber(3)" class="btn btn-light">3</button>
+            </div>
+            <div class="col">
+                <button onclick="clickOperator('-')" class="btn btn-light">-</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button onclick="clickNumber(0)" class="btn btn-light">0</button>
+            </div>
+            <div class="col">
+                <button onclick="clickOperator(',')" class="btn btn-light">,</button>
+            </div>
+            <div class="col">
+                <button onclick="getResult()" class="btn btn-light">=</button>
+            </div>
+            <div class="col">
+                <button onclick="clickOperator('+')" class="btn btn-light">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

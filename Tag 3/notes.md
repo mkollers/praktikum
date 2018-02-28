@@ -1,0 +1,5 @@
+- console.log
+- Variablen
+- Operatoren
+- If
+- Schleifen
